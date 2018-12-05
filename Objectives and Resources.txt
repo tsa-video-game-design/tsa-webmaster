@@ -1,0 +1,34 @@
+- Band Website
+	- Photos
+	- Biography
+	- Tour Dates
+	- Shop to buy/download music
+	- Lyrics
+	- Fan Message Board/Blog
+	- "About" page linking to the TSA and CTE websites. (REQUIRED)
+
+	- Large photos
+	- Full-Screen Backgrounds
+	- Textured Backgrounds
+	- Bright colors
+
+- Objectives
+	- Should serve as a guide for information about the band
+	- Present an overview, like in the music business
+	- Purchase items (tickets, music, merchandise)
+
+- Evaluation Objectives
+	- Cross-Platform Compatability
+		- Windows 7/8/10 and Mac OS
+			- Chrome
+			- Edge
+			- Firefox
+			- Safari
+		- Mobile Browsers
+			- Safari (iOS)
+			- Chrome (Android)
+	- Website URL (and other documentation) must be submitted by May 15, 2019 at 11:59 PM
+
+- Examples
+	- https://www.crazyegg.com/blog/example-musician-websites/ (OFFICIAL)
+	- https://www.vandelaydesign.com/best-band-websites/ (OFFICIAL)
