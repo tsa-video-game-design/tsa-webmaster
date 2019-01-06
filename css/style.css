@@ -30,6 +30,7 @@ your own style.css file in your folder. Thanks! */
     filter: brightness(0.8);
 }
 
+
 body {
     font-family: sans-serif;
     padding: 0;
@@ -53,6 +54,7 @@ body {
 .h-logo-wrapper {
     height: 100%;
     width: fit-content;
+    padding-left: 0.5em;
     margin: 0;
 }
 .h-link {
@@ -71,6 +73,30 @@ body {
 .h-links {
     margin-left: auto;
     height: 100%;
+}
+.h-hamburger {
+    margin-left: auto;
+    height: 100%;
+}
+.h-mobile-menu-wrapper {
+    background-color: orange;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    top: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.h-mobile-menu { /* We'll override this with JS when the user clicks the hamburger */
+    display: none;
+}
+.h-m-link {
+    color: white;
+    display: block;
+    font-size: 1.3em;
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
 }
 .content {
 
@@ -104,4 +130,22 @@ body {
 }
 .c-s-button {
     margin: 0 auto;
+}
+
+
+/* DESKTOP SITE DECLARATIONS */
+@media (min-width: 700px) { /* Targets devices with a width >= 1000px */
+    .h-hamburger {
+        display: none;
+    }
+    .h-mobile-menu-wrapper {
+        display: none;
+    }
+}
+
+/* MOBILE SITE DECLARATIONS */
+@media (max-width: 700px) { /* Targets devices with a width <= 1000px */
+    .h-links {
+        display: none;
+    }
 }
