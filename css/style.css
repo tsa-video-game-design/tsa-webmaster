@@ -2,3 +2,106 @@
 If you have something specific to your page (like an album art 
 cover or something other pages don't have), the please create 
 your own style.css file in your folder. Thanks! */
+
+/* GENERIC STYLES (For elements like buttons, text, etc) */
+
+.gen-button {
+    padding: 15px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2398e0+0,1e739e+100 */
+    background: #2398e0; /* Old browsers */
+    background: -moz-linear-gradient(top, #2398e0 0%, #1e739e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #2398e0 0%,#1e739e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #2398e0 0%,#1e739e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2398e0', endColorstr='#1e739e',GradientType=0 ); /* IE6-9 */
+    border-radius: 4px;
+    color: white;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.gen-button:hover {
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    filter: brightness(1.2);
+}
+.gen-button:active {
+    transition: 0.1s;
+    filter: brightness(0.8);
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+    height: 4em;
+}
+.h-logo {
+    height: 100%;
+}
+.h-logo-wrapper {
+    height: 100%;
+    width: fit-content;
+    margin: 0;
+}
+.h-link {
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-right: 1px solid rgba(255,255,255,0.15);
+}
+.h-links {
+    margin-left: auto;
+    height: 100%;
+}
+.content {
+
+}
+.content-wrapper {
+    margin: 0;
+}
+.c-splash {
+    width: 100%;
+    height: 30em;
+    max-height: 100%;
+    background-color: red;
+    margin: 0;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/Microphone.jpg);
+    background-size: cover;
+    background-position: top;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-s-header {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+}
+.c-s-tagline {
+    color: white;
+    text-align: center;
+}
+.c-s-button {
+    margin: 0 auto;
+}
