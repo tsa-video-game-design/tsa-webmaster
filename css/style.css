@@ -99,6 +99,7 @@ body {
     width: 100%;
     padding: 0.5em;
     box-sizing: border-box;
+	text-decoration: none;
 }
 .content {
 
@@ -109,7 +110,7 @@ body {
 .c-splash {
     width: 100%;
     height: 40em;
-    max-height: vh;
+    max-height: 100vh;
     background-color: red;
     margin: 0;
     background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/Microphone.jpg);
@@ -140,6 +141,16 @@ body {
 
 .splash-image-tour {
     /* background declarations, etc */
+	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/vwbus.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.splash-image-about {
+    /* background declarations, etc */
+	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/lasercutting.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .c-tourlist {
@@ -167,6 +178,51 @@ body {
 	vertical-align: baseline;
 	height: 1.2em;
 }
+.c-text-block {
+	margin: 2em;
+}
+.c-blog-post {
+	margin-top: 3em;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+.c-b-author {
+	width: 30%;
+	height: 100%;
+	float:left;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+.c-b-content {
+	padding: 2em;
+	margin-left: 30%;
+	width: auto;
+}
+.c-b-content h1 {
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+.c-b-a-icon {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	background-color: white;
+	display: block;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+	border-radius: 3px;
+}
+.c-b-a-name {
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+}
+.c-b-a-rank {
+	width: 100%;
+	text-align: center;
+	margin-top: 0.5em;
+	font-style: italic;
+}
+
 /* DESKTOP SITE DECLARATIONS */
 @media (min-width: 700px) { /* Targets devices with a width >= 1000px */
     .h-hamburger {
@@ -182,4 +238,7 @@ body {
     .h-links {
         display: none;
     }
+	.c-text-block {
+		margin: 2em 1em 1em 1em;
+	}
 }
