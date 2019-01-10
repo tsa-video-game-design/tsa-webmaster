@@ -95,9 +95,9 @@ function playEvent(event) {
     if (event.type == "scroll") {
         window.scrollTo(event["pos"][0],event["pos"][1]);
     } else if (event.type == "click") {
-        document.getElementsByClassName("f-cursor")[0].src = "../images/cursor_click.png";
+        document.getElementsByClassName("f-cursor")[0].src = "images/cursor_click.png";
         setTimeout(function() {
-            document.getElementsByClassName("f-cursor")[0].src = "../images/cursor.png";
+            document.getElementsByClassName("f-cursor")[0].src = "images/cursor.png";
         },300);
         document.elementFromPoint(event["pos"][0], event["pos"][1]).click();
     } else if (event.type == "mousemove") {
