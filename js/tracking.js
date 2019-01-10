@@ -39,15 +39,20 @@ function transmitToServer(key,value) {
 	//Publishes (new Date().getTime(),key,value) to server
 	console.log("Published "+key+": "+value+" at "+new Date().getTime());
 }
-
+var poslist = [];
 //Events
 //On Mouse Move
+var startTime = new Date().getTime();
 window.onmousemove = function(e) {
 	transmitToServer("mousemove",getMouseCoords(e));
 }
 //On scroll
 window.onscroll = function(e) {
 	transmitToServer("scroll",getScrollPosition());
+    poslist.push({
+        "pos": getScrollPosition(),
+        "ts": (new Date().getTime() - startTime)
+    });
 }
 //On page resize
 window.onresize = function(e) {
@@ -65,4 +70,22 @@ window.onkeydown = function(e) {
 window.onkeyup = function(e) {
 	transmitToServer("keyup",getKeyPress(e));
 }
+
 //TODO!! Playback on home computer
+
+function activateScrollPosition(pos) {
+    console.log("Scrolling to "+pos);
+    window.scrollTo(pos[0],pos[1]);
+}
+function scrollThroughList(listofpos) {//DELETE LATER
+    startTime = new Date().getTime();
+    
+    globalposlist = listofpos;
+    myvar = setInterval(function() {
+        var currentTime = new Date().getTime() - startTime;
+        var done = false;
+        while (!done) {
+            
+        }
+    },30);
+}
