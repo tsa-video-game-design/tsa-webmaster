@@ -89,7 +89,7 @@ window.onload = function(e) {
         "ts": (new Date().getTime() - startTime)
     });
 };
-//TODO!! Mouseup/Mousedown, hover, focus(?)
+//TODO!! Mouseup/Mousedown, PAGE RESIZE, hover, focus(?)
 
 function playEvent(event) {
     if (event.type == "scroll") {
