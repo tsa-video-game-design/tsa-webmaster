@@ -50,7 +50,7 @@ window.onmousemove = function(e) {
         "pos": getMouseCoords(e),
         "ts": (new Date().getTime() - startTime)
     });
-}
+};
 //On scroll
 window.onscroll = function(e) {
 	transmitToServer("scroll",getScrollPosition());
@@ -59,11 +59,11 @@ window.onscroll = function(e) {
         "pos": getScrollPosition(),
         "ts": (new Date().getTime() - startTime)
     });
-}
+};
 //On page resize
 window.onresize = function(e) {
 	transmitToServer("resize",getWindowSize());
-}
+};
 //On page click
 window.onclick = function(e) {
 	transmitToServer("click",getMouseCoords(e));
@@ -72,29 +72,41 @@ window.onclick = function(e) {
         "pos": getMouseCoords(e),
         "ts": (new Date().getTime() - startTime)
     });
-}
+};
 //On key down
 window.onkeydown = function(e) {
 	transmitToServer("keydown",getKeyPress(e));
-}
+};
 //On key up
 window.onkeyup = function(e) {
 	transmitToServer("keyup",getKeyPress(e));
-}
-
+};
+window.onload = function(e) {
+    transmitToServer("scroll",getScrollPosition());
+    eventlist.push({
+        "type":"scroll",
+        "pos": getScrollPosition(),
+        "ts": (new Date().getTime() - startTime)
+    });
+};
 //TODO!! Playback on home computer
 
 function playEvent(event) {
     if (event.type == "scroll") {
         window.scrollTo(event["pos"][0],event["pos"][1]);
     } else if (event.type == "click") {
+        document.getElementsByClassName("f-cursor")[0].src = "../images/cursor_click.png";
+        setTimeout(function() {
+            document.getElementsByClassName("f-cursor")[0].src = "../images/cursor.png";
+        },300);
         document.elementFromPoint(event["pos"][0], event["pos"][1]).click();
     } else if (event.type == "mousemove") {
         document.getElementsByClassName("f-cursor")[0].style.marginLeft = event["pos"][0]+"px";
         document.getElementsByClassName("f-cursor")[0].style.marginTop = event["pos"][1]+"px";
     }
 }
-function playBackEventList(listofpos) {//DELETE LATER
+function playBackEventList(listofpos) {
+    document.getElementsByClassName("f-cursor")[0].style.visibility = "visible";
     startTime = new Date().getTime();
     globaleventlist = listofpos;
     
@@ -117,4 +129,7 @@ function playBackEventList(listofpos) {//DELETE LATER
             clearInterval(myvar);
         }
     },10);
+}
+function el(eventlst) { //A shortened version of the command, easy when I get tired of typing long stuff!
+    playBackEventList(eventlst);
 }

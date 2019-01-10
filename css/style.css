@@ -228,6 +228,8 @@ body {
     height: 100%;
     box-sizing: border-box;
     z-index: 5;
+    pointer-events: none;
+    visibility: hidden;
 }
 .f-cursor {
     width: 40px;
