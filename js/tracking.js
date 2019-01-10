@@ -89,7 +89,7 @@ window.onload = function(e) {
         "ts": (new Date().getTime() - startTime)
     });
 };
-//TODO!! Playback on home computer
+//TODO!! Mouseup/Mousedown, hover, focus(?)
 
 function playEvent(event) {
     if (event.type == "scroll") {
