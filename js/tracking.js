@@ -39,17 +39,23 @@ function transmitToServer(key,value) {
 	//Publishes (new Date().getTime(),key,value) to server
 	console.log("Published "+key+": "+value+" at "+new Date().getTime());
 }
-var poslist = [];
+var eventlist = [];
 //Events
 //On Mouse Move
 var startTime = new Date().getTime();
 window.onmousemove = function(e) {
 	transmitToServer("mousemove",getMouseCoords(e));
+    eventlist.push({
+        "type":"mousemove",
+        "pos": getMouseCoords(e),
+        "ts": (new Date().getTime() - startTime)
+    });
 }
 //On scroll
 window.onscroll = function(e) {
 	transmitToServer("scroll",getScrollPosition());
-    poslist.push({
+    eventlist.push({
+        "type":"scroll",
         "pos": getScrollPosition(),
         "ts": (new Date().getTime() - startTime)
     });
@@ -61,6 +67,11 @@ window.onresize = function(e) {
 //On page click
 window.onclick = function(e) {
 	transmitToServer("click",getMouseCoords(e));
+    eventlist.push({
+        "type":"click",
+        "pos": getMouseCoords(e),
+        "ts": (new Date().getTime() - startTime)
+    });
 }
 //On key down
 window.onkeydown = function(e) {
@@ -73,32 +84,36 @@ window.onkeyup = function(e) {
 
 //TODO!! Playback on home computer
 
-function activateScrollPosition(pos) {
-    window.scrollTo(pos[0],pos[1]);
+function playEvent(event) {
+    if (event.type == "scroll") {
+        window.scrollTo(event["pos"][0],event["pos"][1]);
+    } else if (event.type == "click") {
+        document.elementFromPoint(event["pos"][0], event["pos"][1]).click();
+    } else if (event.type == "mousemove") {
+        document.getElementsByClassName("f-cursor")[0].style.marginLeft = event["pos"][0]+"px";
+        document.getElementsByClassName("f-cursor")[0].style.marginTop = event["pos"][1]+"px";
+    }
 }
 function playBackEventList(listofpos) {//DELETE LATER
     startTime = new Date().getTime();
+    globaleventlist = listofpos;
     
-    globalposlist = listofpos;
     myvar = setInterval(function() {
         var currentTime = new Date().getTime() - startTime;
         var done = true;
-        if (globalposlist[0]["ts"] <= currentTime) {
+        if (globaleventlist[0]["ts"] <= currentTime) {
             var done = false;
         } else {
             var done = true;
         }
         while (!done) {
-            var currentdata = globalposlist.shift();
-            
-            
-            activateScrollPosition(currentdata["pos"]);
-            
-            if (globalposlist.length < 1 || globalposlist[0]["ts"] > currentTime) {
+            var currentevent = globaleventlist.shift();
+            playEvent(currentevent);
+            if (globaleventlist.length < 1 || globaleventlist[0]["ts"] > currentTime) {
                 done = true;
             }
         }
-        if (globalposlist.length < 1) {
+        if (globaleventlist.length < 1) {
             clearInterval(myvar);
         }
     },10);

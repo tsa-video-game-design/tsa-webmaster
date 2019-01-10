@@ -222,7 +222,16 @@ body {
 	margin-top: 0.5em;
 	font-style: italic;
 }
-
+.fakemouse {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+.f-cursor {
+    width: 40px;
+}
 /* DESKTOP SITE DECLARATIONS */
 @media (min-width: 700px) { /* Targets devices with a width >= 1000px */
     .h-hamburger {
