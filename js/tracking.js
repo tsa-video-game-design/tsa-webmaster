@@ -74,18 +74,32 @@ window.onkeyup = function(e) {
 //TODO!! Playback on home computer
 
 function activateScrollPosition(pos) {
-    console.log("Scrolling to "+pos);
     window.scrollTo(pos[0],pos[1]);
 }
-function scrollThroughList(listofpos) {//DELETE LATER
+function playBackEventList(listofpos) {//DELETE LATER
     startTime = new Date().getTime();
     
     globalposlist = listofpos;
     myvar = setInterval(function() {
         var currentTime = new Date().getTime() - startTime;
-        var done = false;
-        while (!done) {
-            
+        var done = true;
+        if (globalposlist[0]["ts"] <= currentTime) {
+            var done = false;
+        } else {
+            var done = true;
         }
-    },30);
+        while (!done) {
+            var currentdata = globalposlist.shift();
+            
+            
+            activateScrollPosition(currentdata["pos"]);
+            
+            if (globalposlist.length < 1 || globalposlist[0]["ts"] > currentTime) {
+                done = true;
+            }
+        }
+        if (globalposlist.length < 1) {
+            clearInterval(myvar);
+        }
+    },10);
 }
