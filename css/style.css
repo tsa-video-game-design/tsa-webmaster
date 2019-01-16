@@ -113,7 +113,7 @@ body {
     max-height: 100vh;
     background-color: red;
     margin: 0;
-    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/Microphone.jpg);
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/cookie.jpg);
     background-size: cover;
     background-position: top;
 	background-attachment: fixed;
