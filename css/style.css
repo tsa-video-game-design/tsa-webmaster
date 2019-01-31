@@ -148,7 +148,7 @@ body {
 
 .splash-image-about {
     /* background declarations, etc */
-	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/lasercutting.jpg);
+	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/html_code.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
