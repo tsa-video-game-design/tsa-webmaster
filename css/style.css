@@ -161,6 +161,13 @@ body {
 	background-attachment: fixed;
 	background-position:center right;
 }
+
+.splash-image-biography {
+	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/microphone.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position:center right;
+}
 .c-tourlist {
     list-style-type: none;
     list-style-position: inside;
