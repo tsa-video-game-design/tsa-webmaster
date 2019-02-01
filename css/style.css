@@ -142,7 +142,7 @@ body {
 
 .splash-image-tour {
     /* background declarations, etc */
-	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/vwbus.jpg);
+	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/train.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
