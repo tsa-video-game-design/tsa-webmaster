@@ -4,6 +4,14 @@ cover or something other pages don't have), the please create
 your own style.css file in your folder. Thanks! */
 
 /* GENERIC STYLES (For elements like buttons, text, fonts, etc) */
+@font-face {
+    font-family: 'lstkclarendonregular';
+    src: url('rusticserif-webfont.woff2') format('woff2'),
+         url('rusticserif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .gen-button {
     padding: 15px;
