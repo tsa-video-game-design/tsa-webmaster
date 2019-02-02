@@ -3,7 +3,11 @@ If you have something specific to your page (like an album art
 cover or something other pages don't have), the please create 
 your own style.css file in your folder. Thanks! */
 
-/* GENERIC STYLES (For elements like buttons, text, etc) */
+/* GENERIC STYLES (For elements like buttons, text, fonts, etc) */
+@font-face {
+  font-family: 'LSTKClarendon';
+  src: url('LSTKClarendon.otf'); /* IE9 Compat Modes *
+}
 
 .gen-button {
     padding: 15px;
@@ -30,6 +34,9 @@ your own style.css file in your folder. Thanks! */
     transition: 0.1s;
     filter: brightness(0.8);
 }
+
+
+
 
 
 body {
