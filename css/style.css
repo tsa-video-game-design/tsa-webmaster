@@ -4,10 +4,6 @@ cover or something other pages don't have), the please create
 your own style.css file in your folder. Thanks! */
 
 /* GENERIC STYLES (For elements like buttons, text, fonts, etc) */
-@font-face {
-  font-family: 'LSTKClarendon';
-  src: url('LSTKClarendon.otf'); /* IE9 Compat Modes *
-}
 
 .gen-button {
     padding: 15px;
