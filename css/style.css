@@ -85,6 +85,8 @@ body {
     text-transform: uppercase;
     font-weight: 100;
     border-right: 1px solid rgba(255,255,255,0.15);
+    font-family: lstkclarendonregular;
+    font-size: 1.4em;
 }
 .h-links {
     margin-left: auto;
@@ -109,11 +111,13 @@ body {
 .h-m-link {
     color: white;
     display: block;
-    font-size: 1.3em;
     width: 100%;
     padding: 0.5em;
     box-sizing: border-box;
-	text-decoration: none;
+    text-decoration: none;
+    font-family: lstkclarendonregular;
+    font-size: 1.5em;
+}
 }
 .content {
 
