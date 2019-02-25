@@ -242,6 +242,17 @@ img.c-t-t-image {
     padding: 5px 10px;
 }
 
+a.c-t-t-amazonlink {
+    display: block;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+img.c-t-t-a-image {
+    width: 100%;
+}
+
 .c-text-block {
 	margin: 2em;
 }
