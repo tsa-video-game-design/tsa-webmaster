@@ -330,4 +330,9 @@ img.c-t-t-a-image {
 	.c-text-block {
 		margin: 2em 1em 1em 1em;
 	}
+	.c-t-tile {
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
+	}
 }
