@@ -279,6 +279,7 @@ img.c-t-t-a-image {
     display: flex;
     box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
     border-radius: 4px;
+    overflow:hidden;
 }
 .c-b-author {
     border-right: 1px solid rgba(0,0,0,0.2);
