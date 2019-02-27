@@ -316,6 +316,15 @@ img.c-t-t-a-image {
 	margin-top: 0.5em;
 	font-style: italic;
 }
+.c-musicservices {
+	background-color:black;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.c-m-item {
+	width: 5em;
+}
 .fakemouse {
     position: fixed;
     width: 100%;
