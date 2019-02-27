@@ -321,9 +321,11 @@ img.c-t-t-a-image {
 	display: flex;
 	align-items:center;
 	justify-content:center;
+	padding: 2em 0;
 }
 .c-m-item {
 	width: 5em;
+	margin: 0 1em;
 }
 .fakemouse {
     position: fixed;
