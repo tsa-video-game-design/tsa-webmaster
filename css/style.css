@@ -219,12 +219,13 @@ body {
     font-style: italic;
 }
 .c-t-i-marker {
-	vertical-align: middle;
-	margin-left: 0.1em;
+	
 }
 .c-t-i-m-image {
 	vertical-align: baseline;
 	height: 1.2em;
+	vertical-align: middle;
+	margin-left: 0.1em;
 }
 
 .c-t-tile {
