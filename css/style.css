@@ -296,6 +296,19 @@ img.c-t-t-a-image {
 	margin: 0;
 	margin-bottom: 0.5em;
 }
+.c-b-c-comments {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+}
+.c-b-c-c-intro {
+    font-size: 0.8em;
+    color: rgba(0,0,0,0.6);
+}
+textarea.c-b-c-c-textarea {
+    width: 100%;
+    height: 4em;
+}
 .c-b-a-icon {
 	width: 50%;
 	margin: 0 auto;
@@ -317,6 +330,7 @@ img.c-t-t-a-image {
 	margin-top: 0.5em;
 	font-style: italic;
 }
+
 .c-musicservices {
 	background-color:black;
 	display: flex;
