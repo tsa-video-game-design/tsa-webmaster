@@ -331,6 +331,17 @@ img.c-t-t-a-image {
 .c-m-i-image {
 	width: 100%;
 }
+.c-y {
+	width: 100%;
+	min-height: 50%;
+	max-height: 100%;
+	height: 30em;
+}
+.c-y-embed {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
 .fakemouse {
     position: fixed;
     width: 100%;
