@@ -326,6 +326,10 @@ img.c-t-t-a-image {
 .c-m-item {
 	width: 5em;
 	margin: 0 1em;
+	display: block;
+}
+.c-m-i-image {
+	width: 100%;
 }
 .fakemouse {
     position: fixed;
