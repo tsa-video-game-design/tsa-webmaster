@@ -354,6 +354,18 @@ input.c-m-f-submit {
     font-size: 0.8em;
     color: rgba(0,0,0,0.6);
 }
+button.c-b-c-c-b-post {
+    display: block;
+    margin-left: auto;
+    background-color: #428aff;
+    border: none;
+    color: white;
+    padding: 0.5em 0.7em;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: 0.3s;
+    outline: none;
+}
 textarea.c-b-c-c-textarea {
     width: 100%;
     height: 4em;
