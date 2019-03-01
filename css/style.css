@@ -276,7 +276,7 @@ img.c-t-t-a-image {
 }
 .c-m-title {
     font-size: 2em;
-    font-family: lstkclarendon;
+    font-family: lstkclarendonregular;
     color: white;
 }
 .c-m-description {
@@ -285,7 +285,7 @@ img.c-t-t-a-image {
 }
 
 label.c-m-f-label {
-    font-family: lstkclarendon;
+    font-family: lstkclarendonregular;
     color: white;
     font-size: 1.5em;
     margin-top: 0.5em;
@@ -296,7 +296,7 @@ label.c-m-f-label {
     display: block;
     margin-left: auto;
     font-size: 1.5em;
-    font-family: lstkclarendon;
+    font-family: lstkclarendonregular;
     background: none;
     border: 2px solid white;
     border-radius: 0.2em;
@@ -308,7 +308,7 @@ input.c-m-f-submit {
     display: block;
     margin-left: auto;
     font-size: 1.5em;
-    font-family: lstkclarendon;
+    font-family: lstkclarendonregular;
     background: white;
     border: 2px solid white;
     border-radius: 0.2em;
