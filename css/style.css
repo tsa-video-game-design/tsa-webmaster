@@ -313,9 +313,8 @@ input.c-m-f-submit {
     border: 2px solid white;
     border-radius: 0.2em;
     padding: 0.25em;
-    color: black;
+    color: #333;
     margin-top: 0.5em;
-    mix-blend-mode: exclusion;
     outline: none;
 }
 
