@@ -289,7 +289,8 @@ label.c-m-f-label {
     color: white;
     font-size: 1.5em;
     margin-top: 0.5em;
-    display: inline-block;
+    display: block;
+    text-align:right;
 }
 .c-m-f-input {
     display: block;
@@ -315,6 +316,7 @@ input.c-m-f-submit {
     color: black;
     margin-top: 0.5em;
     mix-blend-mode: exclusion;
+    outline: none;
 }
 
 .c-shop-container {
