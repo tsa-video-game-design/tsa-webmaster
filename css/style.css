@@ -435,7 +435,7 @@ textarea.c-b-c-c-textarea {
     .h-mobile-menu-wrapper {
         display: none;
     }
-    	.c-mailinglist-youtube-warpper {
+    	.c-mailinglist-youtube-wrapper {
 		display: grid;
   		grid-template-columns: 70% 30%;
   		grid-template-rows: 1fr;
