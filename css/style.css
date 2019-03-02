@@ -345,6 +345,9 @@ input.c-m-f-submit {
 	margin: 0;
 	margin-bottom: 0.5em;
 }
+.c-b-c-image {
+	max-width: 100%;
+}
 .c-b-c-comments {
     border-top: 1px solid rgba(0,0,0,0.2);
     margin-top: 0.5em;
