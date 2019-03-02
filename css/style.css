@@ -331,6 +331,7 @@ input.c-m-f-submit {
     box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
     border-radius: 4px;
     overflow:hidden;
+    margin-bottom:2em;
 }
 .c-b-author {
     border-right: 1px solid rgba(0,0,0,0.2);
